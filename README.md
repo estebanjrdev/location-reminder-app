@@ -22,19 +22,24 @@ Esta aplicación permite a los usuarios configurar recordatorios basados en la u
 ## Instalación
 
 1. **Clona este repositorio:**
+   
    git clone <https://github.com/estebanjrdev/location-reminder-app.git>
+   
    cd location-reminder-app
-2. **Instala las dependencias:**
+3. **Instala las dependencias:**
+   
    npm install
-3. **Instala las dependencias específicas de Expo:**
+5. **Instala las dependencias específicas de Expo:**
+   
    npx expo install expo-location expo-task-manager expo-notifications react-native-maps @react-native-async-storage/async-storage
-4. **Inicia el servidor de desarrollo de Expo:**  
+7. **Inicia el servidor de desarrollo de Expo:**
+   
    npx expo start
-5. **Abre la aplicación Expo Go en tu dispositivo móvil:** 
+9. **Abre la aplicación Expo Go en tu dispositivo móvil:** 
    - Escanea el código QR que aparece en Expo Developer Tools en tu navegador.
    - La aplicación se abrirá en tu dispositivo móvil.
    - Asegúrate de permitir el acceso a la ubicación tanto en primer plano como en   segundo plano en tu dispositivo móvil.
-6. **Agregar un recordatorio:** 
+10. **Agregar un recordatorio:** 
    - Ingresa el nombre de la tarea en el campo de texto.
    - Toca en el mapa para seleccionar la ubicación donde deseas que se active el recordatorio.
    - Especifica el radio de proximidad (en metros).
