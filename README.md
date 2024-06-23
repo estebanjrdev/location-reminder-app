@@ -46,3 +46,8 @@ Esta aplicación permite a los usuarios configurar recordatorios basados en la u
    - Presiona el botón "Add Reminder" para agregar el recordatorio.
    - Cuando entres en el radio de proximidad especificado, deberías recibir una notificación en tu dispositivo móvil.
    - El recordatorio activado se guardará en el historial.
+<div>
+<img src="https://user-images.githubusercontent.com/106480242/234586158-80149220-5f64-459a-b9c4-01689f857ada.PNG" alt="JuveR" width="300px">
+<img src="https://user-images.githubusercontent.com/106480242/234588548-edb05ed9-e00e-4dee-83c3-5424e0a02307.PNG" alt="JuveR" width="300px">
+<img src="https://user-images.githubusercontent.com/106480242/234588841-6256b9bb-72da-48df-be83-b3cbd78ebe6f.PNG" alt="JuveR" width="300px">
+</div>
