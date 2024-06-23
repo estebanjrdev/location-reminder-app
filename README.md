@@ -6,9 +6,9 @@ Esta aplicación permite a los usuarios configurar recordatorios basados en la u
 
 - Muestra un mapa con la ubicación actual del usuario en tiempo real.
 - Permite agregar nuevos recordatorios especificando:
-  - Nombre de la tarea.
-  - Ubicación en el mapa donde se debe activar el recordatorio.
-  - Radio de proximidad (en metros) para la activación del recordatorio.
+- Nombre de la tarea.
+- Ubicación en el mapa donde se debe activar el recordatorio.
+- Radio de proximidad (en metros) para la activación del recordatorio.
 - Los recordatorios se activan automáticamente cuando el usuario entra en el radio de proximidad especificado.
 - La aplicación muestra una notificación que informa al usuario sobre la tarea activada.
 - Muestra un historial de todas las tareas activadas recientemente, indicando la fecha y hora de activación.
