@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# Location Reminder App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta aplicación permite a los usuarios configurar recordatorios basados en la ubicación. Es útil para recordar tareas específicas cuando te encuentras en lugares particulares.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+- Muestra un mapa con la ubicación actual del usuario en tiempo real.
+- Permite agregar nuevos recordatorios especificando:
+  - Nombre de la tarea.
+  - Ubicación en el mapa donde se debe activar el recordatorio.
+  - Radio de proximidad (en metros) para la activación del recordatorio.
+- Los recordatorios se activan automáticamente cuando el usuario entra en el radio de proximidad especificado.
+- La aplicación muestra una notificación que informa al usuario sobre la tarea activada.
+- Muestra un historial de todas las tareas activadas recientemente, indicando la fecha y hora de activación.
 
-   ```bash
+## Requisitos
+
+- Node.js
+- Expo CLI
+- Dispositivo móvil con la aplicación Expo Go instalada (para pruebas)
+
+## Instalación
+
+1. **Clona este repositorio:**
+   git clone <https://github.com/estebanjrdev/location-reminder-app.git>
+   cd location-reminder-app
+2. **Instala las dependencias:**
    npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. **Instala las dependencias específicas de Expo:**
+   npx expo install expo-location expo-task-manager expo-notifications react-native-maps @react-native-async-storage/async-storage
+4. **Inicia el servidor de desarrollo de Expo:**  
+   npx expo start
+5. **Abre la aplicación Expo Go en tu dispositivo móvil:** 
+   - Escanea el código QR que aparece en Expo Developer Tools en tu navegador.
+   - La aplicación se abrirá en tu dispositivo móvil.
+   - Asegúrate de permitir el acceso a la ubicación tanto en primer plano como en   segundo plano en tu dispositivo móvil.
+6. **Agregar un recordatorio:** 
+   - Ingresa el nombre de la tarea en el campo de texto.
+   - Toca en el mapa para seleccionar la ubicación donde deseas que se active el recordatorio.
+   - Especifica el radio de proximidad (en metros).
+   - Presiona el botón "Add Reminder" para agregar el recordatorio.
+   - Cuando entres en el radio de proximidad especificado, deberías recibir una notificación en tu dispositivo móvil.
+   - El recordatorio activado se guardará en el historial.
